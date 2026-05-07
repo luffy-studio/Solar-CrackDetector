@@ -68,6 +68,9 @@ Send a test request:
 curl.exe -X POST "http://localhost:8000/predict" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "file=@<sample_image.jpg>"
 ```
 
+
+docker save -o solar_defect_image.tar solar-defect-api
+
 ## Features
 - **State-of-the-art Detection**: Powered by YOLO11 with built-in mixed precision (FP16).
 - **GPU Accelerated**: Native CUDA support, automatic fallback detection, multi-GPU scaling ready.
