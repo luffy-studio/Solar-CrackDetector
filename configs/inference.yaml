@@ -1,0 +1,14 @@
+# Inference Configuration
+model_path: C:/Users/sarva/.vscode/Styarth sir dataset/runs/classify/solar_defects/exp/weights/best.pt
+confidence_threshold: 0.5
+iou_threshold: 0.45
+imgsz: 640
+device: 0 # 'cpu' / GPU
+half: true # Use FP16 mixed precision for inference (requires GPU)
+
+# Webcam/Video stream settings
+stream:
+  source: 0 # def cam 
+  display: true 
+  save: true
+  output_dir: results/inference

@@ -1,0 +1,25 @@
+# YOLO11 Training Configuration
+model:
+  name: yolo11s.pt        # Pre-trained model name (yolo11n.pt, yolo11s.pt, etc.)
+  task: detect            # Task type
+
+training:
+  epochs: 100
+  patience: 20            # Early stopping patience
+  batch: 16
+  imgsz: 640
+  device: 0               # Device to run on: 0 (GPU), 'cpu', or [0, 1] for multi-GPU
+  workers: 8              # Optimized number of dataloader threads
+  optimizer: 'auto'       # Optimizer
+  amp: true               # Mixed precision (FP16) training for GPU acceleration
+  lr0: 0.01               # Initial learning rate
+  lrf: 0.01               # Final learning rate
+  momentum: 0.937
+  weight_decay: 0.0005
+  save_dir: runs/train    # Directory to save runs
+  project: solar_defects  # Project name
+  name: exp               # Experiment name
+
+logging:
+  mlflow: true
+  tensorboard: true

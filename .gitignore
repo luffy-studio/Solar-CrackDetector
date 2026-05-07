@@ -1,0 +1,63 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+ENV/
+env/
+venv.bak/
+pip-wheel-metadata/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Data and generated artifacts
+data/processed/
+runs/
+test_outputs/
+solar_defects/classification_run/weights/
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.onnx
+*.tflite
+
+# Misc
+*.swp
+*.swo
+*.tmp
+*.bak

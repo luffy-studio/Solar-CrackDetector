@@ -1,0 +1,16 @@
+# Dataset Configuration for YOLOv8
+path: C:\Users\sarva\.vscode\Styarth sir dataset\data\processed  # Root directory of dataset
+train: C:\Users\sarva\.vscode\Styarth sir dataset\data\processed\classification_dataset\train # Train images (relative to 'path')
+val: C:\Users\sarva\.vscode\Styarth sir dataset\data\processed\classification_dataset\val # Validation images (relative to 'path')
+#test: C:\Users\sarva\.vscode\Styarth sir dataset\data\processed\classification_dataset\test # Test images (optional)
+
+# Classes
+names:
+  0: 'defective'
+  1: 'non_defective'
+
+# Augmentation settings (if applying offline augmentation parameters here for reference)
+augmentation:
+  enabled: true
+  apply_mosaic: true
+  apply_mixup: false
